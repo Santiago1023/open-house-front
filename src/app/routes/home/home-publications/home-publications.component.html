@@ -1,5 +1,5 @@
 <div class="posts">
-  <div class="post" *ngFor="let post of posts; let i = index">
+  <mat-card class="post" *ngFor="let post of posts; let i = index">
       <div>
         <mat-card-title>
           <img [src]="post.imgUserPost" alt="Imagen de usuario modificada" class="post-author-image-changed">
@@ -29,12 +29,12 @@
         <button id="1" (click)="addComment(post.id, i)" >Mensaje</button>
         
         <div class="text-comments">
-          <button id="2" color="primary" (click)="addComment(post.id, i)" >Comentario</button>
           <div class="add-comment">
             <mat-form-field class="comment-input">
-              <textarea matInput placeholder="Texto modificado..." [(ngModel)]="newCommentChanged[i.toString()]"></textarea>
+              <textarea matInput placeholder="Añade un comentario..." [(ngModel)]="newCommentChanged[i.toString()]"></textarea>
             </mat-form-field>
           </div>
+          <button id="2" color="primary" mat-button (click)="addComment(post.id, i)" class="button-primary">Comentario</button>
         </div>
       </div>  
   </div>
