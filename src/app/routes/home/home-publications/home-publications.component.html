@@ -2,7 +2,7 @@
   <mat-card class="post" *ngFor="let post of posts; let i = index">
       <div>
         <mat-card-title class="debug" style="display: flex; gap: 10px;">
-          <img mat-card-sm-image [src]="post.imgUserPost" alt="Imagen de usuario modificada" class="post-author-image-changed">
+          <img mat-card-avatar [src]="post.imgUserPost" alt="Imagen de usuario modificada" class="post-author-image-changed">
           <div class="post-author-info debug">
             <h3>{{post.userPost}}</h3>
             <p>{{post.resume}}</p>
