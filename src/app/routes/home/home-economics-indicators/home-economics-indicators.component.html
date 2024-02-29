@@ -1,6 +1,10 @@
 <h1>Indicadores económicos</h1>
 <div class="indicators-container">
-    <mat-card *ngFor="let economic of economicIndicators">
+    <mat-card *ngFor="let economic of economicIndicators" class="indicators-card">
         <mat-card-title>{{economic.name}}</mat-card-title>
+        <mat-card-content>
+            <p>{{economic.value}}</p>
+            <p>{{economic.description}}</p>
+        </mat-card-content>
     </mat-card>
 </div>
