@@ -2,7 +2,11 @@
 
 <mat-card class="profile-card">
     <img mat-card-image src="assets/imgs/icons/user_unknown.jpg" alt="Foto de perfil">
+    <mat-card-title>{{user}}</mat-card-title>
     <mat-card-content>
         <p>StartUp de venta de telas</p>
     </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" routerLink="/userProfile">Ver perfil</button>
+    </mat-card-actions>
 </mat-card>
